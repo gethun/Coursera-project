@@ -1,0 +1,119 @@
+*{
+    box-sizing: border-box; 
+    font-family: helvetica;
+
+}
+body {
+    margin: 0px;
+    padding: 0px;    
+}
+ h1 { 
+     margin-bottom: 5px;
+     text-align: center;
+     font-size: 30px;
+ }
+
+p {
+    color: white;
+}
+.heading {
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 0px;
+    border: 1px;
+    border-color:black;
+    border-style: none none solid solid;
+    width: max-content;
+}
+.bg-brown {
+    background-color: tomato;
+    color: black;
+
+}
+.bg-blue {
+    background-color:gray;
+    color: black;
+}
+.bg-red {
+    background-color: cadetblue;
+    color: black;
+}
+.text {
+    text-align: justify;
+    margin: 60px 15px 15px 15px;
+    color: black; 
+} 
+.row {
+width: 100%;
+padding: 0px 10px;
+}
+.row::after {
+    content:"";
+    clear: both;
+    display: table;
+}
+
+.col-lg-1, .col-lg-2, .col-lg-3, .col-md-1, .col-md-2, .col-md-3, .col-sl-1, .col-sl-2, .col-sl-3 {
+    float: left;
+    padding: 10px;
+}
+.container {
+    position: relative;
+    border: 1px solid black;
+    background-color: burlywood;
+    font-size: 13px;
+}
+
+@media (min-width:992px) {
+
+.col-lg-1 { 
+    width: 33.3%;
+
+}
+.col-lg-2 { 
+    width: 33.3%;
+
+}
+.col-lg-3 { 
+    width: 33.3%;
+
+}
+}
+@media (min-width:768px) and (max-width:991px) {
+    .col-md-1 { 
+        width: 50%;
+        height: 50%;
+    
+    }
+    .col-md-2 { 
+        width: 50%;
+        height:50% ;
+    }
+    .col-md-3 { 
+        width: 100%;
+    
+    }
+}
+
+@media (max-width:767px)
+{
+    .col-sl-1 { 
+        width: 100%;
+        padding: 10px 50px;
+    
+    }
+    .col-sl-2 { 
+        width: 100%;
+        padding: 10px 50px;
+    
+    }
+    .col-sl-3 { 
+        width: 100%;
+        padding: 10px 50px;
+    
+    }
+}
